@@ -16,11 +16,15 @@ Você só precisa de 3 passos simples no seu terminal:
 Baixe os arquivos:
 git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
 
+
 Prepare o ambiente (instale o necessário):
 npm install
 
+
 Inicie a mágica:
 npm run test:bdd
+
+
 
 💡 O que acontece ao executar?
 Ao rodar o comando, o navegador vai abrir automaticamente na sua frente. Você verá o teste interagindo com o site (digitando, clicando e navegando).
