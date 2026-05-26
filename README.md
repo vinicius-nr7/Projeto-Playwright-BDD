@@ -1,3 +1,6 @@
+🛒 E-commerce Test Suite (Playwright + BDD)
+Este projeto automatiza os testes de um e-commerce, simulando um usuário real navegando pelo site. O foco é garantir que os fluxos críticos de negócio funcionem sempre como esperado, cobrindo tanto o sucesso quanto as situações de erro.
+
 🎯 O que este projeto testa?
 Caminhos Felizes (Sucesso):
 
@@ -17,27 +20,22 @@ Cenários Negativos (Resiliência):
 
 ⚠️ Busca inexistente: Verifica se o sistema exibe a mensagem correta quando o produto pesquisado não é encontrado.
 
-🚀 Como executar este projeto?
-Siga estes 3 passos simples no seu terminal para colocar a automação para rodar:
+⚡ Como rodar o projeto?
+1. Clone o repositório:
+git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git]
+(https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
 
-Passo 1: Clone o repositório
-
-Bash
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-cd SEU_REPOSITORIO
-Passo 2: Instale as dependências
-
-Bash
+3. Instale as ferramentas necessárias:
 npm install
-Passo 3: Execute os testes
 
-Bash
+4. Inicie a automação:
 npm run test:bdd
-💡 O que acontece ao executar?
-Ao rodar o comando, o navegador será aberto automaticamente. Você verá o teste interagindo com o site em tempo real (digitando, clicando e navegando). Ao final, o terminal apresentará o resultado da execução:
 
-🟢 Tudo verde: O sistema está aprovado e estável.
+💡 O que acontece ao rodar?
+Ao dar o comando final, o navegador abre sozinho e você vê o teste acontecendo na tela, como se uma pessoa estivesse usando o site. Ao terminar, o seu terminal mostrará:
 
-🔴 Algo em vermelho: O teste identificou uma falha ou bug na aplicação.
+🟢 Tudo verde: Parabéns, o sistema está aprovado!
 
-Projeto desenvolvido para demonstração de automação de testes utilizando práticas de BDD.
+🔴 Algo vermelho: O teste encontrou um bug ou falha na aplicação.
+
+Projeto desenvolvido para demonstração de práticas de BDD e Automação de Testes.
