@@ -1,0 +1,19 @@
+{
+  "name": "projeto-playwright-bdd",
+  "version": "1.0.0",
+  "type": "module",
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Vinicius Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "@playwright/test": "^1.60.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "scripts": {
+  "test:bdd": "node --loader ts-node/esm ./node_modules/@cucumber/cucumber/bin/cucumber-js --import steps/**/*.ts --import features/support/**/*.ts"
+}
+}
