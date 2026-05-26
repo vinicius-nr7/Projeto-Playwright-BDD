@@ -1,38 +1,43 @@
-🛒 E-commerce Test Suite (Playwright + BDD)
-Este projeto automatiza os testes de um e-commerce, simulando um usuário real navegando pelo site. O foco é garantir que o login, cadastro, busca de produtos e newsletter funcionem sempre como esperado.
-
 🎯 O que este projeto testa?
-✅ Login: Garante que o acesso funciona e alerta se algo estiver errado.
+Caminhos Felizes (Sucesso):
 
-✅ Cadastro: Testa o registro de novos clientes e valida campos obrigatórios.
+✅ Login: Garante que o acesso funciona com credenciais válidas.
 
-✅ Busca: Verifica se a busca de produtos entrega o resultado correto.
+✅ Cadastro: Testa o registro completo de novos clientes.
 
-✅ Carrinho e Newsletter: Valida se as funções básicas de compra e inscrição estão ativas.
+✅ Busca: Verifica se a busca de produtos entrega o resultado esperado.
 
-🚀 Como colocar para rodar?
-Você só precisa de 3 passos simples no seu terminal:
+✅ Carrinho e Newsletter: Valida se as funções de compra e inscrição estão ativas.
 
-Baixe os arquivos:
+Cenários Negativos (Resiliência):
+
+⚠️ Login sem dados: Garante que o sistema trata corretamente o envio de formulários vazios.
+
+⚠️ Cadastro obrigatório: Valida que o sistema impede o registro sem os campos essenciais.
+
+⚠️ Busca inexistente: Verifica se o sistema exibe a mensagem correta quando o produto pesquisado não é encontrado.
+
+🚀 Como executar este projeto?
+Siga estes 3 passos simples no seu terminal para colocar a automação para rodar:
+
+Passo 1: Clone o repositório
+
+Bash
 git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+cd SEU_REPOSITORIO
+Passo 2: Instale as dependências
 
-
-Prepare o ambiente (instale o necessário):
+Bash
 npm install
+Passo 3: Execute os testes
 
-
-Inicie a mágica:
+Bash
 npm run test:bdd
-
-
-
 💡 O que acontece ao executar?
-Ao rodar o comando, o navegador vai abrir automaticamente na sua frente. Você verá o teste interagindo com o site (digitando, clicando e navegando).
+Ao rodar o comando, o navegador será aberto automaticamente. Você verá o teste interagindo com o site em tempo real (digitando, clicando e navegando). Ao final, o terminal apresentará o resultado da execução:
 
-Ao final, o terminal mostrará um resumo claro:
+🟢 Tudo verde: O sistema está aprovado e estável.
 
-Se tudo estiver verde (🟢), o sistema está aprovado!
-
-Se aparecer algo em vermelho (🔴), o teste identificou um problema na aplicação.
+🔴 Algo em vermelho: O teste identificou uma falha ou bug na aplicação.
 
 Projeto desenvolvido para demonstração de automação de testes utilizando práticas de BDD.
